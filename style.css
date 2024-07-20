@@ -1,0 +1,159 @@
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#top, #header, #header-links, #hero, .cards, .card, .quote,.action,#footer {
+    display: flex;
+}
+
+#top, #information, .quote, .action, #footer {
+    padding: 0 12vw;
+}
+
+#top,
+#footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#header, #footer {
+    max-height: 64px;
+}
+
+#top {
+    flex-direction: column;
+    gap: 24px;
+}
+
+#header {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    flex: 1 1 400px;
+    gap: 4px;
+}
+
+#hero-main {
+    font-weight: 900;
+    font-size: 48px;
+    color: #f9faf8;
+    margin: 0;
+}
+
+#hero-img {
+    background-color: #616c83;
+    flex: 1 0 auto;
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#hero-secondary,
+#header-links a {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 400;
+}
+
+#header-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 8px;
+    text-align: right;
+}
+
+
+#header-links a {
+    text-decoration: none;
+}
+
+#header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 600;
+}
+
+button#signup {
+    padding: 4px 16px;
+    border-radius: 6px;
+    border: 0px solid white;
+}
+
+
+button#signup,
+.action {
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+h2#information-header {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1f2937;
+    text-align: center;
+}
+
+
+
+.cards {
+    gap: 16px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    flex: 1 0 auto;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card img {
+    border: 3px solid #3882f6;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    color: #1f2937;
+}
+
+#footer {
+    justify-content: center;
+}
