@@ -9,11 +9,7 @@ body {
 
 }
 
-#top, #header, #header-links, #hero, .cards, .card, .quote,.action,#footer {
-    display: flex;
-}
-
-#top, #information, .quote, .action, #footer {
+#top, #information, .quote, #footer {
     padding: 0 12vw;
 }
 
@@ -32,11 +28,13 @@ body {
 }
 
 #top {
+    display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 #header {
+    display: flex;
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
@@ -84,6 +82,7 @@ body {
 }
 
 #header-links {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -112,7 +111,7 @@ button.signup {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 8rem;
     margin: 4rem 12vw;
     border-radius: 5px;
 }
@@ -130,18 +129,35 @@ button.signup,
 
 .quote {
     background-color: #e5e7eb;
-    
+    padding: 64px 12vw;
+}
+
+.quote-text {
+    margin: 0;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 0;
+    padding-right: 16px;
 }
 
 .action-text {
-    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.8em 0;
 }
 
 .action-text h2 {
     line-height: 0;
+    flex: 0;
+    margin: 16px 0;
 }
 .action-text p {
-    line-height: 0.5cm;
+    line-height: 0cm;
 }
 
 h2#information-header {
@@ -154,12 +170,14 @@ h2#information-header {
 
 
 .cards {
+    display: flex;
     gap: 16px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .card {
+    display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 200px;
@@ -185,5 +203,6 @@ h2#information-header {
 }
 
 #footer {
+    display: flex;
     justify-content: center;
 }
